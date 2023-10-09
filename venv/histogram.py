@@ -7,4 +7,14 @@ for c in input:
         map[c] = 1
     else:
         map[c] += 1
-print(mapa)
+print("KONFLIKT")
+print("KONFLIKT")
+print("KONFLIKT")
+print("KONFLIKT")
+print("KONFLIKT")
+print("KONFLIKT")
+print("KONFLIKT")
+print("KONFLIKT")
+print("KONFLIKT")
+print("KONFLIKT")
+print("KONFLIKT")
