@@ -1,4 +1,5 @@
-
+import math
+import matplotlib.pyplot as plt
 
 input = input("Podaj swoj ciąg znakow: ")
 map = {}
@@ -7,4 +8,7 @@ for c in input:
         map[c] = 1
     else:
         map[c] += 1
-print(mapa)
+print(map)
+
+plt.bar(map.keys(), map.values())
+plt.show()
