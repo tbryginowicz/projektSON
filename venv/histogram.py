@@ -8,6 +8,19 @@ for c in input:
         map[c] = 1
     else:
         map[c] += 1
+
+print("KONFLIKT")
+print("KONFLIKT")
+print("KONFLIKT")
+print("KONFLIKT")
+print("KONFLIKT")
+print("KONFLIKT")
+print("KONFLIKT")
+print("KONFLIKT")
+print("KONFLIKT")
+print("KONFLIKT")
+print("KONFLIKT")
+
 print(map)
 
 plt.bar(map.keys(), map.values())
