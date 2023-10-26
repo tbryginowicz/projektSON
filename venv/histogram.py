@@ -1,27 +1,15 @@
 import math
 import matplotlib.pyplot as plt
 
-input = input("Podaj swoj ciąg znakow: ")
-map = {}
-for c in input:
-    if c not in map:
-        map[c] = 1
+UsErInPuT = input("Podaj swoj ciąg znakow: ")
+MaP = {}
+for c in UsErInPuT:
+    if c not in MaP:
+        MaP[c] = 1
     else:
-        map[c] += 1
+        MaP[c] += 1
 
-print("KONFLIKT")
-print("KONFLIKT")
-print("KONFLIKT")
-print("KONFLIKT")
-print("KONFLIKT")
-print("KONFLIKT")
-print("KONFLIKT")
-print("KONFLIKT")
-print("KONFLIKT")
-print("KONFLIKT")
-print("KONFLIKT")
+print(MaP)
 
-print(map)
-
-plt.bar(map.keys(), map.values())
+plt.bar(MaP.keys(), MaP.values())
 plt.show()
