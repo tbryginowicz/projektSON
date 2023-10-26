@@ -9,18 +9,6 @@ for c in input:
     else:
         map[c] += 1
 
-print("KONFLIKT")
-print("KONFLIKT")
-print("KONFLIKT")
-print("KONFLIKT")
-print("KONFLIKT")
-print("KONFLIKT")
-print("KONFLIKT")
-print("KONFLIKT")
-print("KONFLIKT")
-print("KONFLIKT")
-print("KONFLIKT")
-
 print(map)
 
 plt.bar(map.keys(), map.values())
