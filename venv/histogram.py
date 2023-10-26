@@ -1,5 +1,5 @@
-import math
 import matplotlib.pyplot as plt
+
 
 UsErInPuT = input("Podaj swoj ciąg znakow: ")
 scope = input("podaj jakie znaki liczyć odzdzielone ':', jesli wszystkie zostaw puste")
