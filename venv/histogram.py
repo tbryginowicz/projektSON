@@ -2,11 +2,15 @@ import math
 import matplotlib.pyplot as plt
 
 UsErInPuT = input("Podaj swoj ciąg znakow: ")
+scope = input("podaj jakie znaki liczyć odzdzielone ':', jesli wszystkie zostaw puste")
+if scope == "":
+    scope = inputString
+scope = scope.split(";")
 MaP = {}
 for c in UsErInPuT:
-    if c not in MaP:
+    if c not in MaP and c in scope:
         MaP[c] = 1
-    else:
+    elif c in scope :
         MaP[c] += 1
 
 print(MaP)
