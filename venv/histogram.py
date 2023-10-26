@@ -1,15 +1,19 @@
 import matplotlib.pyplot as plt
 
-toJeszczeDoUstalenia = input("Wpisz cos: ")
-slownikNazwaDoUstalenia = {}
 
-for zmiennaDoUstalenia in toJeszczeDoUstalenia:
-    if zmiennaDoUstalenia not in slownikNazwaDoUstalenia:
-        slownikNazwaDoUstalenia[zmiennaDoUstalenia] = 1
-    else:
-        slownikNazwaDoUstalenia[zmiennaDoUstalenia] += 1
+UsErInPuT = input("Podaj swoj ciąg znakow: ")
+scope = input("podaj jakie znaki liczyć odzdzielone ':', jesli wszystkie zostaw puste")
+if scope == "":
+    scope = UsErInPuT
+scope = scope.split(";")
+MaP = {}
+for c in UsErInPuT:
+    if c not in MaP and c in scope:
+        MaP[c] = 1
+    elif c in scope :
+        MaP[c] += 1
 
-print(slownikNazwaDoUstalenia)
+print(MaP)
 
-plt.bar(slownikNazwaDoUstalenia.keys(), slownikNazwaDoUstalenia.values())
+plt.bar(MaP.keys(), MaP.values())
 plt.show()
