@@ -1,12 +1,17 @@
 import math
 import matplotlib.pyplot as plt
 
-input = input("Podaj swoj ciąg znakow: ")
+inputString = input("Podaj swoj ciąg znakow: ")
+scope = input("podaj jakie znaki liczyć odzdzielone ':', jesli wszystkie zostaw puste")
+if scope == "":
+    scope = inputString
+scope = scope.split(";")
+
 map = {}
-for c in input:
-    if c not in map:
+for c in inputString :
+    if c not in map and c in scope:
         map[c] = 1
-    else:
+    elif c in scope :
         map[c] += 1
 
 print("KONFLIKT")
